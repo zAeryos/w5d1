@@ -24,5 +24,6 @@ public class W5d1Application {
 
 		Menu menu = ctx.getBean("menulist", Menu.class);
 		System.out.println(menu);
+		menu.printMenu();
 	}
 }
