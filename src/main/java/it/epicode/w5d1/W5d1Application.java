@@ -1,5 +1,6 @@
 package it.epicode.w5d1;
 
+import it.epicode.w5d1.bean.Menu;
 import it.epicode.w5d1.bean.Pizza;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -20,5 +21,8 @@ public class W5d1Application {
 
 		Pizza pizzaDiavola = ctx.getBean("diavola", Pizza.class);
 		System.out.println(pizzaDiavola);
+
+		Menu menu = ctx.getBean("menulist", Menu.class);
+		System.out.println(menu);
 	}
 }

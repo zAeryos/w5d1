@@ -97,9 +97,13 @@ public class AppConfig {
         wine.setPrice(7.49);
         wine.setQuantityLiters("0.75l");
         wine.setAlcoholicPercentage("13%");
+
         return wine;
     }
 
-
+    @Bean("menulist")
+    public Menu menuList() {
+        return new Menu(List.of(pizzaMargherita(),pizzaHawaiian(),pizzaDiavola()),List.of(water(),wine(),lemonade()), List.of(ham(),cheese(),onions(),salami(),pineapple()));
+    }
 
 }
